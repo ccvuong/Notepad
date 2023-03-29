@@ -33,9 +33,9 @@ app.get("/api/notes", (req, res) => {
 // function to delete saved notes
 app.delete("/api/notes/:id", (req, res) => {
     const notes = JSON.parse(fs.readFileSync("./Develop/db/db.json"));
-    const deleteNote = notes.filter((removeNote) => removeNote.id !== req.params.id);
+    const deleteNote = notes.filter((closeNote) => closeNote.id !== req.params.id);
 
-    fs.writeFileSync("./Develop/db/db.json", JSON.stringify(delNote));
+    fs.writeFileSync("./Develop/db/db.json", JSON.stringify(deleteNote));
     res.json(deleteNote);
 })
 
