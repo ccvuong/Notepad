@@ -1,6 +1,6 @@
 # Challenge 📝
 
-Create an application called Note Taker that can be used to write and save notes
+Create an application called Notepad that can be used to write and save notes with an option to delete notes.
 
 ## Table of Contents
 - [User Story ✏](#user-story)
@@ -39,11 +39,13 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
+
 ## Preview
-(TBA)
+![notepad-preview](https://user-images.githubusercontent.com/116984891/228510953-9884f8a4-c2df-4072-ae7f-a25c5f440584.gif)
 
 ## Deployed Page
-(TBA)
+[ 🔥 Heroku link](https://note-pad-saver.herokuapp.com/notes)
+
 ## Contributors
 [😎 Christina Vuong ](https://github.com/ccvuong)
 
