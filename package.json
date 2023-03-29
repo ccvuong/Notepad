@@ -1,0 +1,21 @@
+{
+  "name": "miniature-eureka",
+  "version": "1.0.0",
+  "description": "Create an application called Note Taker that can be used to write and save notes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccvuong/miniature-eureka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccvuong/miniature-eureka/issues"
+  },
+  "homepage": "https://github.com/ccvuong/miniature-eureka#readme"
+}

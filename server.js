@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('./Develop/public'));
+app.use(express.static(path.join(__dirname, './Develop/public')));
 
 
 // function to add new notes
@@ -33,9 +33,10 @@ app.get("/api/notes", (req, res) => {
 // function to delete saved notes
 app.delete("/api/notes/:id", (req, res) => {
     const notes = JSON.parse(fs.readFileSync("./Develop/db/db.json"));
-    const delNote = notes.filter((rmvNote) => rmvNote.id !== req.params.id);
+    const deleteNote = notes.filter((removeNote) => removeNote.id !== req.params.id);
+
     fs.writeFileSync("./Develop/db/db.json", JSON.stringify(delNote));
-    res.json(delNote);
+    res.json(deleteNote);
 })
 
 // calling notes.html
